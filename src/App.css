@@ -1,0 +1,12 @@
+.hellodd {
+    transform: rotatey(180deg);
+    position: absolute;
+    top: 70px;
+    z-index: 1;
+    
+  }
+
+  .hellod {
+    position: absolute;
+    top: 70px;
+  }

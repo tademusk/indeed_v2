@@ -1,11 +1,11 @@
 import {AiOutlineArrowRight} from "react-icons/ai"
 import { CgMenuRight } from "react-icons/Cg";
 import { MdOutlineClear } from "react-icons/Md";
-import logo from "./assets/td.png"
+import logo from "../assets/logo.png";
 import { useState } from 'react'
 const Navbar = () => {
   const [clickes,setClicked]=useState()
-  const [linkescliked,setLinkesCliked]=useState("1")
+  const [linkescliked,setLinkesCliked] = useState("1")
   
   const linkto=(e)=>{
     setLinkesCliked(e)
@@ -14,31 +14,37 @@ const Navbar = () => {
  
 
   return (
-    <nav className= "">
+    <nav className= "flex items-center md:py-1 justify-between">
         <div className="" >
              <img src={logo} className=" h-[70px] w-[160px] " alt="" />
         </div>
         <div className={clickes?" mobile active":"mobile"}>
-            <ul className="flex h-full items-center justify-center ">
+            <ul className="flex h-full text-whitee text-white items-center justify-center gap-2 ">
                 <li className=" list-none mr-5" onClick={()=>{
                   linkto("1")
-                }}><a href="#hero" className={linkescliked==="1"?"active":""} >Catagories </a></li>
+                }}><a href="#hero" className={linkescliked==="1"?"active":""} >Home </a></li>
                 <li className="list-none mr-5" onClick={()=>{
                   linkto("2")
-                }}><a href="" className={linkescliked==="2"?"active":""}>How its work </a></li>
+                }}><a href="" className={linkescliked==="2"?"active":""}>About </a></li>
                 <li className="list-none mr-5" onClick={()=>{
                   linkto("3")
-                }}><a href="#partner" className={linkescliked==="3"?"active":""}>Become our partner </a></li>
+                }}><a href="#partner" className={linkescliked==="3"?"active":""}>Researches </a></li>
                 <li className="list-none mr-5" onClick={()=>{
                   linkto("4")
-                }}><a href="#contact" className={linkescliked==="4"?"active":""}>Contact Us </a></li>
-                <button className="flex pl-5 pr-5 bg-[#FF35F7] hover:opacity-50 rounded-[5px]  items-center h-[40px] font-semibold "><span className="mr-3">Join our Telegram</span> <AiOutlineArrowRight/> </button>
+                }}><a href="#partner" className={linkescliked==="4"?"active":""}>Designes </a></li>
+                <li className="list-none mr-5" onClick={()=>{
+                  linkto("5")
+                }}><a href="#partner" className={linkescliked==="5"?"active":""}>Blogs </a></li>
+                <li className="list-none mr-5" onClick={()=>{
+                  linkto("6")
+                }}><a href="#contact" className={linkescliked==="6"?"active":""}>Contact Us </a></li>
+                <button style={{ color : '#00E1E7'}} className="flex pl-5 pr-5 border border-white  hover:opacity-90 rounded-[5px]  items-center h-[40px] font-semibold "><span className="mr-3">Apply as a volunteer</span> <AiOutlineArrowRight/> </button>
         
             </ul>
            
         </div>
         
-        <div className="btn"
+        <div className="md:hidden"
         onClick={()=>{
           console.log("cliked");
           setClicked(!clickes)}}>{!clickes? <CgMenuRight/> : <MdOutlineClear/>}
