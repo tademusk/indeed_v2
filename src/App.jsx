@@ -1,8 +1,7 @@
 import styles from './styles'
 import './App.css'
-import homesvg from './assets/home.svg'
 
-import { Aman, Hero, Navbar, Home } from './components'
+import { Aman, Hero, Navbar, Home, About, VMG } from './components'
 
 export default function App() {
   return (
@@ -18,6 +17,18 @@ export default function App() {
           <Home />  
       </section>
 
+       <section className={` ${styles.flexCenter}  ${styles.paddingX} mt-[80px] w-full font-poppins`}>
+         <div className={` ${styles.boxWidth}`}>
+            <About />
+         </div> 
+      </section>
+
+       <section className={` ${styles.flexCenter}  ${styles.paddingX} my-24 py-10 w-full bg-[#F3F3F4] font-poppins`}>
+         <div className={` ${styles.boxWidth}`}>
+           <VMG />
+         </div> 
+      </section>
+
 
       {/* <section className={` ${styles.flexStart}  ${styles.paddingX} w-full top-0  shadow-gray-200 font-poppins`}>
            <div className={`w-full`}>
@@ -31,6 +42,17 @@ export default function App() {
            </div>   
        </section> */}
        
+       {/* <div className='py-60 bg-[#F3F3F4] my-24'>
+         <div className=''>
+            <div>
+               
+            </div>
+            <p className="">
+                
+            </p>
+         </div>
+          
+       </div> */}
 
   </div>
   )

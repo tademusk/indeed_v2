@@ -10,3 +10,26 @@
     position: absolute;
     top: 70px;
   }
+
+
+  .backdrop-blur {
+    backdrop-filter: blur(2px);
+  }
+  
+  .card {
+    width: 288px;
+    height: 321px;
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 0px 4px 60px 10px rgba(0, 0, 0, 0.05);
+  }
+
+  .btn {
+    border-radius: 10px;
+    border: 1px solid #2F91E0;
+     background: #FFF;
+  }
+
+  .rotateY {
+    transform: rotatey(180deg);
+  }
