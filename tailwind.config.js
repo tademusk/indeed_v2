@@ -21,6 +21,13 @@ export default {
         fontFamily: {
           poppins: ["Poppins", "sans-serif"],
          },
+         backgroundImage: {
+          'senae': 'linear-gradient(116deg, #00E1E7 -3.86%, #5F41D9 61.74%)',
+          'tade': 'linear-gradient(116deg, #ddf542 -3.86%, #0aa34f 61.74%)',
+          'nahom': 'linear-gradient(116deg, #ffa500 -3.86%, #f5610c 61.74%)',
+          'kalab': 'linear-gradient(116deg, #818196 -3.86%, #1b1b1c 61.74%)',
+          'kume': 'linear-gradient(116deg, #eb1eeb -3.86%, #9653bd 61.74%)',
+        },
        screens: {
          xs: "380px",
          ss: "560px",

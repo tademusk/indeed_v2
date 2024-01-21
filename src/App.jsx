@@ -2,6 +2,7 @@ import styles from './styles'
 import './App.css'
 
 import { Aman, Hero, Navbar, Home, About, VMG } from './components'
+import Blogs from './components/Blogs'
 
 export default function App() {
   return (
@@ -23,9 +24,15 @@ export default function App() {
          </div> 
       </section>
 
-       <section className={` ${styles.flexCenter}  ${styles.paddingX} my-24 py-10 w-full bg-[#F3F3F4] font-poppins`}>
+       <section className={` ${styles.flexCenter}  ${styles.paddingX} mt-24 py-10 w-full bg-[#F3F3F4] font-poppins`}>
          <div className={` ${styles.boxWidth}`}>
            <VMG />
+         </div> 
+      </section>
+
+       <section className={` ${styles.flexCenter}  ${styles.paddingX} py-10 w-full font-poppins`}>
+         <div className={` ${styles.boxWidth}`}>
+           <Blogs />
          </div> 
       </section>
 
