@@ -1,4 +1,4 @@
-import React from 'react'
+
 import heroLogo from '../assets/heroLogo.png'
 
 const Home = () => {
@@ -11,26 +11,24 @@ const Home = () => {
               <path d="M0 0.5L1520 0C1520 384.5 1520 460.5 1520 460.5L0 810V0.5Z" fill="url(#paint0_linear_1_53)"/>
               <defs>
                 <linearGradient id="paint0_linear_1_53" x1="5.43739e-05" y1="-95.5" x2="807.528" y2="643.239" gradientUnits="userSpaceOnUse">
-                  <stop stop-color="#00E1E7"/>
-                  <stop offset="1" stop-color="#5F41D9"/>
+                  <stop stopColor="#00E1E7"/>
+                  <stop offset="1" stopColor="#5F41D9"/>
                 </linearGradient>
               </defs>
               </svg>    
              </div>
              <div className='absolute top-[80px]'>
              <svg xmlns="http://www.w3.org/2000/svg" width="1518" height="810" viewBox="0 0 1518 810" fill="none">
-               <path d="M0 0.5L1518 0C1518 384.5 1518 460.5 1518 460.5L0 810V0.5Z" fill="#E7E7E9" fill-opacity="0.5"/>
+               <path d="M0 0.5L1518 0C1518 384.5 1518 460.5 1518 460.5L0 810V0.5Z" fill="#E7E7E9" fillOpacity="0.5"/>
                 </svg>
              </div>
             </div>  
           </div> 
 
-          <div className='absolute top-0 flex items-start w-full max-w-[1280px]  z-10'>
-              <div className='md:w-[48%] md:pt-48'>
-                  <p className=' uppercase tracking-widest text-[20px] text-white/75'>
-                    Indeed Community
-                  </p>
-                  <div className="text-[35px] py-8 text-white font-bold">
+          <div className='absolute top-20   flex items-start w-full max-w-[1280px]  z-10 flex-col md:flex-row  max-h-fit'>
+              <div className='w-full md:w-[48%]  '>
+                 
+                  <div className="text-[20px] md:text-[35px] py-8 text-white font-bold">
                      <h1>
                        Researching Community Challenges, Crafting Solutions, and Driving Change Together.                 
                       </h1>
@@ -38,19 +36,19 @@ const Home = () => {
                   <p className="text-white/70 text-[15px] tracking-wide">
                     Committed to in-depth research and innovative problem-solving, our team aims to drive positive change by addressing and resolving the most pressing challenges within our community, with a shared vision of creating a brighter future for all.
                   </p>
-                  <div className='py-12'>
+                  <div className='pt-12 flex justify-center'>
                       <button className='py-[6px] px-8 border-[3px] border-white font-semibold hover:bg-white hover:text-blue-500 text-white rounded-xl'>
                          Contact Us
                       </button>
                   </div>
               </div>
-              <div className='md:w-[52%] pt-10'>
+              <div className='w-full relative  md:w-[52%] flex flex-col ' >
 
                 <img src={heroLogo} className='w-full opacity-30 scale-95 -ml-10' alt=''/>
 
                   {/* <div className=' scale-[90%] '>
                   <svg xmlns="http://www.w3.org/2000/svg" width="442" height="395" viewBox="0 0 442 395" fill="none">
-                      <g filter="url(#filter0_b_1_55)">
+                      < g filter="url(#filter0_b_1_55)">
                         <path d="M90.628 204.062L378.689 334.814C427.926 360.11 442 395 442 395L441.516 363.294L440.879 315.928L440.713 309.684C439.744 249.828 404.11 195.901 349.282 171.887L84.719 55.5542C14.2259 21.6013 0 0 0 0L0.318294 18.4032L0.802638 51.5289L0.954856 67.0648C1.35992 96.0117 10.0009 124.25 25.8741 148.5C41.7473 172.75 64.2012 192.017 90.628 204.062Z" fill="url(#paint0_linear_1_55)" fill-opacity="0.5"/>
                         <path d="M1.05039 2.90482C1.48051 3.39491 1.99393 3.9592 2.60028 4.59556C5.07277 7.19039 9.09107 10.9842 15.3097 15.8334C27.7457 25.5308 48.9894 39.4551 84.285 56.4551L84.3006 56.4627L84.3164 56.4696L348.88 172.803L348.881 172.803C403.348 196.659 438.751 250.233 439.713 309.7L439.713 309.71L439.879 315.942L439.879 315.955L440.516 363.308L440.516 363.309L440.932 390.524C440.626 389.953 440.283 389.33 439.901 388.658C437.787 384.949 434.459 379.751 429.584 373.762C419.833 361.782 403.9 346.642 379.146 333.925L379.124 333.913L379.102 333.903L91.0427 203.152C64.7877 191.185 42.4802 172.044 26.7108 147.953C10.9418 123.862 2.35759 95.8091 1.95479 67.0529C1.95478 67.0522 1.95477 67.0515 1.95476 67.0508L1.8026 51.5191L1.80253 51.5143L1.31819 18.3886L1.31814 18.3859L1.05039 2.90482Z" stroke="url(#paint1_radial_1_55)" stroke-opacity="0.5" stroke-width="2"/>
                       </g>
@@ -62,12 +60,12 @@ const Home = () => {
                           <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_1_55" result="shape"/>
                         </filter>
                         <linearGradient id="paint0_linear_1_55" x1="0" y1="0" x2="442.355" y2="394.602" gradientUnits="userSpaceOnUse">
-                          <stop stop-color="white" stop-opacity="0.4"/>
-                          <stop offset="1" stop-color="white" stop-opacity="0"/>
+                          <stop stopColor="white" stopOpacity="0.4"/>
+                          <stop offset="1" stopColor="white" stopOpacity="0"/>
                         </linearGradient>
                         <radialGradient id="paint1_radial_1_55" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(221 197.5) rotate(90) scale(197.5 221)">
-                          <stop stop-color="white"/>
-                          <stop offset="1" stop-color="white" stop-opacity="0.5"/>
+                          <stop stopColor="white"/>
+                          <stop offset="1" stopColor="white" stopOpacity="0.5"/>
                         </radialGradient>
                       </defs>
                   </svg>
@@ -88,12 +86,12 @@ const Home = () => {
                          <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_1_56" result="shape"/>
                        </filter>
                        <linearGradient id="paint0_linear_1_56" x1="-3.89336e-07" y1="0.00128474" x2="347.26" y2="306.959" gradientUnits="userSpaceOnUse">
-                         <stop stop-color="white" stop-opacity="0.4"/>
-                         <stop offset="1" stop-color="white" stop-opacity="0"/>
+                         <stop stopColor="white" stopOpacity="0.4"/>
+                         <stop offset="1" stopColor="white" stopOpacity="0"/>
                        </linearGradient>
                        <radialGradient id="paint1_radial_1_56" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(176.5 156.5) rotate(90) scale(156.5 176.5)">
-                         <stop stop-color="white"/>
-                         <stop offset="1" stop-color="white" stop-opacity="0.5"/>
+                         <stop stopColor="white"/>
+                         <stop offset="1" stopColor="white" stopOpacity="0.5"/>
                        </radialGradient>
                      </defs>
                    </svg>
@@ -115,31 +113,31 @@ const Home = () => {
                          <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_1_57" result="shape"/>
                        </filter>
                        <linearGradient id="paint0_linear_1_57" x1="0" y1="0" x2="262.78" y2="247.234" gradientUnits="userSpaceOnUse">
-                         <stop stop-color="white" stop-opacity="0.4"/>
-                         <stop offset="1" stop-color="white" stop-opacity="0"/>
+                         <stop stopColor="white" stopOpacity="0.4"/>
+                         <stop offset="1" stopColor="white" stopOpacity="0"/>
                        </linearGradient>
                        <radialGradient id="paint1_radial_1_57" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(131.5 123.5) rotate(90) scale(123.5 131.5)">
-                         <stop stop-color="white"/>
-                         <stop offset="1" stop-color="white" stop-opacity="0.5"/>
+                         <stop stopColor="white"/>
+                         <stop offset="1" stopColor="white" stopOpacity="0.5"/>
                        </radialGradient>
                      </defs>
                    </svg>
                   </div> */}
 
 
-                  <div className=' flex gap-4 -mt-72'>
-                     <div className="card flex gap-4 scale-[90%] flex-col items-center justify-center p-4">
+                  <div className=' absolute w-full top-0 flex  gap-2 md:gap-4 mt-12  max-w-full  justify-center  md:h-full flex-row items-end'>
+                     <div className="card flex md:gap-4   scale-[80%] md:scale-[90%] flex-col items-center justify-center  p-2 md:p-4">
                      <svg xmlns="http://www.w3.org/2000/svg" width="84" height="84" viewBox="0 0 84 84" fill="none">
                         <path d="M42 0C18.816 0 0 18.816 0 42C0 65.184 18.816 84 42 84C65.184 84 84 65.184 84 42C84 18.816 65.184 0 42 0ZM57.162 26.628C61.656 26.628 65.268 30.24 65.268 34.734C65.268 39.228 61.656 42.84 57.162 42.84C52.668 42.84 49.056 39.228 49.056 34.734C49.014 30.24 52.668 26.628 57.162 26.628ZM31.962 19.992C37.422 19.992 41.874 24.444 41.874 29.904C41.874 35.364 37.422 39.816 31.962 39.816C26.502 39.816 22.05 35.364 22.05 29.904C22.05 24.402 26.46 19.992 31.962 19.992ZM31.962 58.338V74.088C21.882 70.938 13.902 63.168 10.374 53.256C14.784 48.552 25.788 46.158 31.962 46.158C34.188 46.158 37.002 46.494 39.942 47.082C33.054 50.736 31.962 55.566 31.962 58.338ZM42 75.6C40.866 75.6 39.774 75.558 38.682 75.432V58.338C38.682 52.374 51.03 49.392 57.162 49.392C61.656 49.392 69.426 51.03 73.29 54.222C68.376 66.696 56.238 75.6 42 75.6Z" fill="url(#paint0_linear_1_73)"/>
                         <defs>
                           <linearGradient id="paint0_linear_1_73" x1="0" y1="0" x2="84" y2="84" gradientUnits="userSpaceOnUse">
-                            <stop stop-color="#00E1E7" stop-opacity="0.5"/>
-                            <stop offset="1" stop-color="#5F41D9" stop-opacity="0.5"/>
+                            <stop stopColor="#00E1E7" stopOpacity="0.5"/>
+                            <stop offset="1" stopColor="#5F41D9" stopOpacity="0.5"/>
                           </linearGradient>
                         </defs>
                       </svg>
 
-                      <p className="p-4 text-center font-semibold text-lg">
+                      <p className="p-4 text-center font-semibold text-md md:text-lg">
                          you can join us as a <span className=" text-orange-500 font-bold"> Researcher </span> here
                       </p>
 
@@ -148,18 +146,18 @@ const Home = () => {
                       </button>
                      </div>
 
-                     <div className="card flex gap-4 scale-[90%] flex-col items-center justify-center p-4">
+                     <div className="card flex gap-2  md:gap-4  scale-[80%] md:scale-[90%] flex-col items-center justify-center p-2 md:p-4">
                      <svg xmlns="http://www.w3.org/2000/svg" width="84" height="84" viewBox="0 0 84 84" fill="none">
                         <path d="M42 0C18.816 0 0 18.816 0 42C0 65.184 18.816 84 42 84C65.184 84 84 65.184 84 42C84 18.816 65.184 0 42 0ZM57.162 26.628C61.656 26.628 65.268 30.24 65.268 34.734C65.268 39.228 61.656 42.84 57.162 42.84C52.668 42.84 49.056 39.228 49.056 34.734C49.014 30.24 52.668 26.628 57.162 26.628ZM31.962 19.992C37.422 19.992 41.874 24.444 41.874 29.904C41.874 35.364 37.422 39.816 31.962 39.816C26.502 39.816 22.05 35.364 22.05 29.904C22.05 24.402 26.46 19.992 31.962 19.992ZM31.962 58.338V74.088C21.882 70.938 13.902 63.168 10.374 53.256C14.784 48.552 25.788 46.158 31.962 46.158C34.188 46.158 37.002 46.494 39.942 47.082C33.054 50.736 31.962 55.566 31.962 58.338ZM42 75.6C40.866 75.6 39.774 75.558 38.682 75.432V58.338C38.682 52.374 51.03 49.392 57.162 49.392C61.656 49.392 69.426 51.03 73.29 54.222C68.376 66.696 56.238 75.6 42 75.6Z" fill="url(#paint0_linear_1_73)"/>
                         <defs>
                           <linearGradient id="paint0_linear_1_73" x1="0" y1="0" x2="84" y2="84" gradientUnits="userSpaceOnUse">
-                            <stop stop-color="#00E1E7" stop-opacity="0.5"/>
-                            <stop offset="1" stop-color="#5F41D9" stop-opacity="0.5"/>
+                            <stop stopColor="#00E1E7" stopOpacity="0.5"/>
+                            <stop offset="1" stopColor="#5F41D9" stopOpacity="0.5"/>
                           </linearGradient>
                         </defs>
                       </svg>
 
-                      <p className="p-4 text-center font-semibold text-lg">
+                      <p className="p-4 text-center font-semibold  text-md md:text-lg">
                          you can join us as a <span className='text-orange-500 font-bold'> Designer </span> here
                       </p>
 

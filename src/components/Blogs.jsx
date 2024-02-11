@@ -1,6 +1,6 @@
-import React from "react";
+
 import { Outlet,Route, Routes } from "react-router-dom";
-import { motion } from "framer-motion";
+
 import Blog1 from "./Blogs/Blog1.jsx";
 import Blog2 from "./Blogs/Blog2.jsx";
 import Blog3 from "./Blogs/Blog3.jsx";
@@ -11,12 +11,12 @@ import Catagory from "./Catagory"
 const Blogs = () => {
   return (
     <div
-     className="h-full lg:pt-24 pt-16 ">
+     className="h-full lg:pt-24 pt-16 " id="blog">
       <div
 
         className="blogs-top mt-4 h-[15%] w-full flex flex-col gap-4">
-        <p className="text-center text-lg font-bold text-violet-600">OUR BLOG POSTS</p>
-        <p className="text-4xl text-center font-bold">
+        <p className="text-center text-md md:text-lg font-bold text-violet-600">OUR BLOG POSTS</p>
+        <p className="text-xl md:text-4xl text-center font-bold">
           Please Read <span className="text-violet-600">Blogs</span> By Our Team
         </p>
         <div className="w-full justify-center flex">
@@ -24,7 +24,7 @@ const Blogs = () => {
         </div>
         <p></p>
       </div>
-      <div className=" pt-10 flex-wrap flex mt-5 text-white gap-[5px] justify-center items-center text-center h-[15%] w-full">
+      <div className=" pt-10 flex-wrap flex mt-4 text-white gap-[5px] justify-center items-center text-center h-[15%] w-full">
       
           <Catagory id='0' bgColor="bg-senae" link="./blogBySenae" title='Senae' />
           <Catagory id='1' bgColor="bg-tade" link="./blogByTade" title='Tadele' />
